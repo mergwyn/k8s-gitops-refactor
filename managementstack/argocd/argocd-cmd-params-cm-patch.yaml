@@ -9,6 +9,6 @@ metadata:
   namespace: argocd
 data:
   server.insecure: "true"
-  server.log.level: "debug"
-  reposerver.log.level: "debug"
-  controller.log.level: "debug"
+  server.log.level: "info"
+  reposerver.log.level: "info"
+  controller.log.level: "info"
