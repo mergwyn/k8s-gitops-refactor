@@ -1,6 +1,4 @@
-
-
-
+---
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -13,8 +11,7 @@ spec:
       # branch used to get the variables from 
       revision: HEAD
       directories:
-      # path to the directory that includes directories to read as variables
-      - path: managementstack/cluster1/*
+        - path: managementstack/apps/*
   template:
     metadata:
       # basename is the name of the directory not the full path
