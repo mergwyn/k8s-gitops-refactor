@@ -1,0 +1,3 @@
+dependencies:
+- name: sonarr
+  repository: https://geek-cookbook.github.io/charts/
