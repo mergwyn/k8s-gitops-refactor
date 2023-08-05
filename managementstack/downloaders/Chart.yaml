@@ -9,4 +9,4 @@ appVersion: "1.0"
 dependencies:
   - name: geek-cookbook
     repository: https://geek-cookbook.github.io/charts/
-    version: "16.3.2"
+    version: 16.3.2
