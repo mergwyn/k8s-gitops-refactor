@@ -7,6 +7,6 @@ appVersion: "1.0"
 
 
 dependencies:
-  - name: geek-cookbook
+  - name: sonarr
     repository: https://geek-cookbook.github.io/charts/
     version: 16.3.2
