@@ -1,8 +1,6 @@
 ---
 sonarr:
-  image:
-    repository: lscr.io/linuxserver/sonarr
-    tag: latest
+  image: lscr.io/linuxserver/sonarr:latest
 
   dnsPolicy: ClusterFirst
 
