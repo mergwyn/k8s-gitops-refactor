@@ -1,3 +1,4 @@
 
 intel-device-plugins-gpu:
+  name: intel-device-plugins-gpu
   nodeFeatureRule: true
