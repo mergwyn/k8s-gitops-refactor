@@ -39,16 +39,16 @@ ingress:
     tls:
       - hosts:
         - "*.theclarkhome.com"
-#persistence:
-#  config:
-#    enabled: true
-#    type: hostPath
-#    mountPath: /config
-#    hostPath: /opt/appdata/sonarr
-#  data:
-#    enabled: true
-#    type: nfs
-#    server: 10.58.0.12
-#    path: /srv/media
-#
-#
+persistence:
+  config:
+    enabled: true
+    type: hostPath
+    mountPath: /config
+    hostPath: /opt/appdata/sonarr
+  data:
+    enabled: true
+    type: nfs
+    server: 10.58.0.12
+    path: /srv/media
+
+
