@@ -2,12 +2,17 @@
 image:
   repository: lscr.io/linuxserver/sonarr
   tag: latest
+
+image: lscr.io/linuxserver/sonarr:latest
+
 dnsPolicy: ClusterFirst
+
 env:
   TZ: Europe/London
   UMASK: "002"
   PUID: "3001"
   PGID: "513"
+
 affinity:
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
@@ -17,11 +22,13 @@ affinity:
           operator: In
           values:
           - golf
+
 service:
   sonarr:
     ports:
       https:
         port: 8989
+
 ingress:
   sonarr:
     enabled: true
@@ -39,6 +46,7 @@ ingress:
     tls:
       - hosts:
         - "*.theclarkhome.com"
+
 persistence:
   config:
     enabled: true
