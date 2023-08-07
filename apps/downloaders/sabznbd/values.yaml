@@ -1,5 +1,7 @@
 ---
 sabnzbd:
+  global:
+    fullnameOverride: sabnzbd
   image:
     repository: lscr.io/linuxserver/sabnzbd
     tag: latest
