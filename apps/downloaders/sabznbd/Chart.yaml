@@ -1,0 +1,12 @@
+apiVersion: v2
+name: sabnzdb
+description: Helm chart for sabnzdb
+type: application
+version: 0.1.0
+appVersion: "1.0"
+
+
+dependencies:
+  - name: sabnzdb
+    repository: https://geek-cookbook.github.io/charts/
+    version: 9.*.*
