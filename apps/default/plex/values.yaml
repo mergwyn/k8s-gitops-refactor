@@ -28,25 +28,6 @@ plex:
           port: 32400
           targetPort: 32400
 
-  ingress:
-    main:
-      enabled: false
-      ingressClass: traefik
-      annotations:
-        traefik.ingress.kubernetes.io/router.entrypoints: websecure
-          #kubernetes.io/ingress.class: traefik
-      hosts:
-        - host: "plex.theclarkhome.com"
-          paths:
-            - path: /
-              backend:
-                name: plex
-                service:
-                  port: 32400
-      tls:
-        - hosts:
-          - "*.theclarkhome.com"
-
   affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
