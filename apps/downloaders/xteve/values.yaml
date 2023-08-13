@@ -35,7 +35,7 @@ xteve:
           port: 34400
 
   ingress:
-    xteve-new:
+    xteve:
       enabled: true
       ingressClass: traefik
       annotations:
@@ -52,6 +52,14 @@ xteve:
       tls:
         - hosts:
           - "*.theclarkhome.com"
+
+  probes:
+    liveness:
+      enabled: false
+    startup:
+      enabled: false
+    readiness:
+      enabled: false
 
   dnsPolicy: ClusterFirst
 
