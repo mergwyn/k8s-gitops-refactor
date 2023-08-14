@@ -8,4 +8,5 @@
       "matchPackageNames": ["ghcr.io/home-assistant/home-assistant"],
       "versioning": "loose"
     }
+  ]
 }
