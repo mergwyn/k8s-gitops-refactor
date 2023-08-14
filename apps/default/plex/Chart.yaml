@@ -9,4 +9,4 @@ appVersion: "1.0"
 dependencies:
   - name: plex
     repository: https://geek-cookbook.github.io/charts/
-    version: 6.*.*
+    version: 6.4.3

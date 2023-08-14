@@ -9,4 +9,4 @@ appVersion: "1.0"
 dependencies:
   - name: prowlarr
     repository: https://geek-cookbook.github.io/charts/
-    version: 4.*.*
+    version: 4.5.2

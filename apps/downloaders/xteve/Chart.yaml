@@ -9,4 +9,4 @@ appVersion: "1.0"
 dependencies:
   - name: xteve
     repository: https://geek-cookbook.github.io/charts/
-    version: 8.*.*
+    version: 8.4.2

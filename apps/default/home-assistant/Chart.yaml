@@ -9,4 +9,4 @@ appVersion: "1.0"
 dependencies:
   - name: home-assistant
     repository: https://geek-cookbook.github.io/charts/
-    version: 13.*.*
+    version: 13.5.0
