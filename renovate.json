@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ].
+  ],
   "packageRules": [
     {
       "matchPackageNames": ["ghcr.io/home-assistant/home-assistant"],
