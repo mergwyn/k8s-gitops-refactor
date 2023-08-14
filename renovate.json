@@ -6,7 +6,8 @@
   "packageRules": [
     {
       "matchPackageNames": ["ghcr.io/home-assistant/home-assistant"],
-      "versioning": "loose"
+      "versioning": "loose",
+      "baseBranch": "master"
     }
   ]
 }
