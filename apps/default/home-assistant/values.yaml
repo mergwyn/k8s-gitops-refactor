@@ -3,7 +3,7 @@ home-assistant:
 
   image:
     repository: ghcr.io/home-assistant/home-assistant
-    tag: "2023.7.3"
+    tag: "2023.8.2"
 
   env:
     TZ: Europe/London
