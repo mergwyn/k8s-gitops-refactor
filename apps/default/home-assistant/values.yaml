@@ -2,7 +2,7 @@
 home-assistant:
 
   image:
-    tag: "2023.7"
+    tag: "2023.7.3"
 
   env:
     TZ: Europe/London
