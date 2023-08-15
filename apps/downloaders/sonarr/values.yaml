@@ -2,7 +2,7 @@
 sonarr:
   image:
     repository: lscr.io/linuxserver/sonarr
-    tag: latest
+    tag: "3.0.10"
 
   dnsPolicy: ClusterFirst
 
