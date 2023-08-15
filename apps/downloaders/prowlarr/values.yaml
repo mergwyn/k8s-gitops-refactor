@@ -3,7 +3,7 @@ prowlarr:
 
   image:
     repository: lscr.io/linuxserver/prowlarr
-    tag: latest
+    tag: "1.7.3"
 
   dnsPolicy: ClusterFirst
 
