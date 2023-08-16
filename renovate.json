@@ -3,7 +3,7 @@
   "extends": [
     "config:base"
   ],
-  "helm values": [
+  "packageRules": [
     {
       "packagePatterns": ["^ghcr.io\\/linuxserver\\/"],
       "versionScheme": "regex:^(?<compatibility>.*(\\d+\\.)?)(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)?$"
