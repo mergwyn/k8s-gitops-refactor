@@ -8,5 +8,5 @@ cloudflare:
   cloudflare:
     env:
       envFrom:
-        cloudflare-tunnel-remote
+        my-cloudflare-tunnel-remote
 #
