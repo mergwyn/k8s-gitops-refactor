@@ -1,0 +1,12 @@
+# Cloudflare parameters.
+
+cloudflare:
+
+  image:
+    tag: "2023.8.2"
+
+  cloudflare:
+    env:
+      envFrom:
+        cloudflare-tunnel-remote
+#
