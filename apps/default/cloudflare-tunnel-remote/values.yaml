@@ -1,6 +1,6 @@
 # Cloudflare parameters.
 
-cloudflare:
+cloudflare-tunnel-remote:
 
   image:
     tag: "2023.8.2"
