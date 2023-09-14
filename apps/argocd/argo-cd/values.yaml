@@ -2,7 +2,7 @@
 argo-cd:
 
   image:
-    tag: v5.46.3
+    tag: "v5.46.3"
   env:
     TZ: Europe/London
 
