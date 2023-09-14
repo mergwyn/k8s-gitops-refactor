@@ -4,10 +4,6 @@ argo-cd:
   env:
     TZ: Europe/London
 
-  global:
-    image:
-      tag: "v2.8.4"
-
   configs:
     params:
       server.insecure: true
