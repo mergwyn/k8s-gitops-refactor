@@ -1,5 +1,5 @@
 
-argocd:
+argo-cd:
 
   env:
     TZ: Europe/London
