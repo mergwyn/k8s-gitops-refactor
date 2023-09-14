@@ -6,7 +6,7 @@ argo-cd:
 
   global:
     image:
-      tag: "5.46.3"
+      tag: "2.8.4"
 
   configs:
     params:
