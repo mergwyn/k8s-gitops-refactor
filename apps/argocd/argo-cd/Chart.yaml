@@ -5,6 +5,10 @@ type: application
 version: 0.1.0
 appVersion: "1.0"
 
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+
 dependencies:
   - name: argo-cd
     repository: https://argoproj.github.io/argo-helm
