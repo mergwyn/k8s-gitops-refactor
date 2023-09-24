@@ -61,6 +61,9 @@ kube-prometheus-stack:
             path: /var/lib/grafana/dashboards/default
     dashboards:
       default:
+        argocd:
+          gnetId: 14584
+          datasource: Prometheus
         hwmon:
           gnetId: 12950
           datasource: Prometheus
