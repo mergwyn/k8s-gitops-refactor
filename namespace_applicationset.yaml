@@ -27,3 +27,6 @@ spec:
           allowEmpty: true
           prune: true
           selfHeal: false
+        syncOptions:
+        - ServerSideApply=true
+        - CreateNamespace=true
