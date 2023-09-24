@@ -10,15 +10,15 @@ argo-cd:
 #      applicationset-controller.log.level: debug
 #      server.log.level: debug
 
-  server:
-    metrics:
-      enabled: true
+#  server:
+#    metrics:
+#      enabled: true
 
-  controller:
-    metrics:
-      enabled: true
-      serviceMonitor:
-        enabled: true
+#  controller:
+#    metrics:
+#      enabled: true
+#      serviceMonitor:
+#        enabled: true
 #      rules:
 #      enabled: true
 #        namespace: observability
