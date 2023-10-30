@@ -9,4 +9,4 @@ appVersion: "1.0"
 dependencies:
   - name: mail
     repository: https://bokysan.github.io/docker-postfix/
-    version: 4.0.0
+    version: v4.0.1
