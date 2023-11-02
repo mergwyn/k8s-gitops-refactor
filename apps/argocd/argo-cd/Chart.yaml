@@ -12,4 +12,4 @@ metadata:
 dependencies:
   - name: argo-cd
     repository: https://argoproj.github.io/argo-helm
-    version: 5.49.0
+    version: 5.50.1
