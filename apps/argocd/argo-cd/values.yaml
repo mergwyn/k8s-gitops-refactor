@@ -1,12 +1,13 @@
 
-argo-cd:
+env:
+  TZ: Europe/London
 
-  env:
-    TZ: Europe/London
-
-  configs:
-    params:
-      server.insecure: true
+configs:
+  cm:
+    annotations:
+      kustomize.buildOptions: --enable-helm
+  params:
+    server.insecure: true
 #      applicationset-controller.log.level: debug
 #      server.log.level: debug
 
@@ -23,30 +24,30 @@ argo-cd:
 #      enabled: true
 #        namespace: observability
 
-  extraObjects:
-    - kind: IngressRoute
-      apiVersion: traefik.containo.us/v1alpha1
-      metadata:
-        name: argocd-server
-        namespace: argocd
-        annotations:
-          kubernetes.io/ingress.class: traefik-external
-      spec:
-        entryPoints:
-          - websecure
-        routes:
-          - kind: Rule
-            match: Host(`argocd.theclarkhome.com`)
-            priority: 10
-            services:
-              - name: argo-cd-argocd-server
-                port: 80
-          - kind: Rule
-            match: Host(`argocd.theclarkhome.com`) && Headers(`Content-Type`, `application/grpc`)
-            priority: 11
-            services:
-              - name: argo-cd-argocd-server
-                port: 80
-                scheme: h2c
-        tls: {}
+extraObjects:
+  - kind: IngressRoute
+    apiVersion: traefik.containo.us/v1alpha1
+    metadata:
+      name: argocd-server
+      namespace: argocd
+      annotations:
+        kubernetes.io/ingress.class: traefik-external
+    spec:
+      entryPoints:
+        - websecure
+      routes:
+        - kind: Rule
+          match: Host(`argocd.theclarkhome.com`)
+          priority: 10
+          services:
+            - name: argo-cd-argocd-server
+              port: 80
+        - kind: Rule
+          match: Host(`argocd.theclarkhome.com`) && Headers(`Content-Type`, `application/grpc`)
+          priority: 11
+          services:
+            - name: argo-cd-argocd-server
+              port: 80
+              scheme: h2c
+      tls: {}
 
