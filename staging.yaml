@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/mergwyn/k8s-gitops.git
+      repoURL: https://github.com/mergwyn/k8s-gitops-refactor.git
       revision: HEAD
       directories:
       - path: apps/*/*
@@ -16,7 +16,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/mergwyn/k8s-gitops.git
+        repoURL: https://github.com/mergwyn/k8s-gitops-refactor.git
         targetRevision: HEAD
         path: '{{path}}'
       destination:
