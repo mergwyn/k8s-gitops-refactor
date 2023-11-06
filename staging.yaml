@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: k8s-kitops
+  name: k8s-kitops-refactor
   namespace: argocd
 spec:
   generators:
@@ -11,7 +11,7 @@ spec:
       directories:
       - path: apps/*/*
       - exclude: true
-        path: apps/kube-system
+        path: apps/node-feature-discovery
   template:
     metadata:
       name: '{{path.basename}}'
