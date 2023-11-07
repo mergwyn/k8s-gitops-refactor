@@ -3,6 +3,6 @@ config:
 
 env:
   cp_enable: "true"
-  vip_address: "10.58.0.48" # TODO change to variable
+  address: 10.58.0.48
   vip_arp: "true"
   vip_leaderelection: "true"
