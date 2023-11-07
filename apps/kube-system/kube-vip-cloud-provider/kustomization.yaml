@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "-83"
 
 helmCharts:
-- name: kube-vip
+- name: kube-vip-cloud-provider
   releaseName: kube-vip-cloud-provider
   version: 0.2.2
   repo: https://kube-vip.github.io/helm-charts
