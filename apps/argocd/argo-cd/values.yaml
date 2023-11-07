@@ -2,7 +2,7 @@
 env:
   TZ: Europe/London
 
-configs:
+config:
   cm:
     kustomize.buildOptions: --enable-helm
   params:
