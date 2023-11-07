@@ -10,8 +10,10 @@ spec:
       revision: HEAD
       directories:
       - path: apps/*/*
-      - exclude: true
-        path: apps/node-feature-discovery
+      - path: apps/node-feature-discovery/*
+        exclude: true
+#      - path: apps/kube-system/kube-vip-cloud-provider
+#        exclude: true
   template:
     metadata:
       name: '{{path.basename}}'
@@ -37,6 +39,8 @@ spec:
         repoURL: https://github.com/mergwyn/k8s-gitops-refactor.git
         targetRevision: HEAD
         path: '{{path}}'
+#        kustomize:
+#          namespace: '{{path[1]}}'
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{path[1]}}'
