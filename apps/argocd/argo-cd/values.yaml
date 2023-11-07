@@ -2,11 +2,10 @@
 env:
   TZ: Europe/London
 
+data:
+    kustomize.buildOptions: --enable-helm
+
 configs:
-  cm:
-    annotations:
-      kustomize:
-        buildOptions: --enable-helm
   params:
     server.insecure: true
 #      applicationset-controller.log.level: debug
