@@ -3,7 +3,7 @@ env:
   TZ: Europe/London
 
 data:
-    kustomize.buildOptions: --enable-helm
+  kustomize.buildOptions: --enable-helm true
 
 configs:
   params:
