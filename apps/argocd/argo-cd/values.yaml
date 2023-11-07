@@ -4,7 +4,7 @@ env:
 
 configs:
   cm:
-    kustomize.buildOptions: --enable-helm true
+    kustomize.buildOptions: --enable-helm
   params:
     server.insecure: true
 #      applicationset-controller.log.level: debug
