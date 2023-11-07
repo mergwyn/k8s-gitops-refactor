@@ -13,5 +13,5 @@ helmCharts:
   #valuesFile: values.yaml
 
 resources:
-- configmap
+- configmap.yaml
 
