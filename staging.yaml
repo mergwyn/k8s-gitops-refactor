@@ -10,10 +10,8 @@ spec:
       revision: HEAD
       directories:
       - path: apps/*/*
-      - path: apps/node-feature-discovery/*
-        exclude: true
-#      - path: apps/kube-system/kube-vip-cloud-provider
-#        exclude: true
+      #- exclude: true
+      #  path: apps/node-feature-discovery/*
   template:
     metadata:
       name: '{{path.basename}}'
